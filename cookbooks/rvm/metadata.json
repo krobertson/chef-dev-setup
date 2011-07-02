@@ -1,0 +1,131 @@
+{
+  "license": "Apache 2.0",
+  "maintainer_email": "fnichol@nichol.ca",
+  "groupings": {
+  },
+  "recommendations": {
+  },
+  "version": "0.1.0",
+  "platforms": {
+    "ubuntu": [
+
+    ]
+  },
+  "suggestions": {
+  },
+  "dependencies": {
+  },
+  "description": "Installs/Configures rvm",
+  "attributes": {
+    "rvm/rvmrc": {
+      "required": "optional",
+      "calculated": false,
+      "choice": [
+
+      ],
+      "default": {
+      },
+      "type": "hash",
+      "recipes": [
+
+      ],
+      "display_name": "Hash of rvmrc options",
+      "description": "Hash of rvmrc options. See RVM documentation for rvmrc options."
+    },
+    "rvm/rubies": {
+      "required": "optional",
+      "calculated": false,
+      "choice": [
+
+      ],
+      "default": [
+        "ree"
+      ],
+      "type": "array",
+      "recipes": [
+
+      ],
+      "display_name": "Installed RVM rubies",
+      "description": "Set of rubites that RVM will manage"
+    },
+    "rvm/default_ruby": {
+      "required": "optional",
+      "calculated": false,
+      "choice": [
+
+      ],
+      "default": "ree",
+      "type": "string",
+      "recipes": [
+
+      ],
+      "display_name": "Default ruby",
+      "description": "Default ruby for new shells"
+    },
+    "rvm/group_users": {
+      "required": "optional",
+      "calculated": false,
+      "choice": [
+
+      ],
+      "default": [
+
+      ],
+      "type": "string",
+      "recipes": [
+
+      ],
+      "display_name": "Additional users in rvm group",
+      "description": "Additional users in rvm group that can manage rvm in a system-wide installation."
+    },
+    "rvm/root_path": {
+      "required": "optional",
+      "calculated": false,
+      "choice": [
+
+      ],
+      "default": "/usr/local/rvm",
+      "type": "string",
+      "recipes": [
+
+      ],
+      "display_name": "RVM root path",
+      "description": "Root path for RVM installation"
+    },
+    "rvm/gems": {
+      "required": "optional",
+      "calculated": false,
+      "choice": [
+
+      ],
+      "default": {
+        "default@global": [
+          {
+            "name": "bundler"
+          }
+        ]
+      },
+      "type": "hash",
+      "recipes": [
+
+      ],
+      "display_name": "Hash of ruby/gemset gem manifests",
+      "description": "Facility to declare the presence of certain gems in gemsets, like bundler."
+    }
+  },
+  "long_description": "= DESCRIPTION:\n\nInstalls a system-wide RVM and manages installed rubies.\n\n= REQUIREMENTS:\n\n== Platform:\n\nFor the moment this is targeted at Ubuntu, other platforms to be tested.\n\n= ATTRIBUTES: \n\n* default_ruby - set the default ruby\n* rubies - list of rubies to install\n\n= USAGE:\n\n= LICENSE and AUTHOR:\n\nAuthor:: Fletcher Nichol (<fnichol@nichol.ca>)\n\nCopyright:: 2010, Fletcher Nichol\n\nLicensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n\n    http://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the License.\n",
+  "conflicting": {
+  },
+  "providing": {
+  },
+  "name": "rvm",
+  "recipes": {
+    "rvm::default_ruby": "Sets a default RVM ruby",
+    "rvm::rubies": "Installs RVM rubies",
+    "rvm::system": "Installs system-wide RVM",
+    "rvm": "Includes all recipes"
+  },
+  "maintainer": "Fletcher Nichol",
+  "replacing": {
+  }
+}

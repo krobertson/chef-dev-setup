@@ -1,0 +1,4 @@
+{
+  "packages": ["autossh", "ack", "imagemagick", "ctags", "wget", "redis"],
+  "run_list": [ "recipe[homebrew]", "recipe[packages]", "recipe[rvm]", "recipe[memcached]", "recipe[mongodb]", "recipe[mysql]", "recipe[text_mate]", "recipe[ken]" ]
+}
