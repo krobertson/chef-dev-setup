@@ -2,6 +2,10 @@
 #  shell "/bin/zsh"
 #end
 
+f = File.new('/tmp/node.yml', 'w')
+f.puts node.to_yaml.to_s
+f.close
+
 git "/Users/#{node[:current_user]}/.configs" do
   repository 'https://github.com/krobertson/configs.git'
   reference "master"
@@ -13,12 +17,3 @@ execute "update configs symlinks" do
   cwd "/Users/#{node[:current_user]}/.configs"
   command "rake symlink:force"
 end
-
-include_recipe "ken::apps"
-
-include_recipe "osx::disable_front_row"
-include_recipe "osx::dock_preferences"
-include_recipe "osx::finder_display_full_path"
-include_recipe "osx::safari_preferences"
-include_recipe "osx::textmate_set_defaults"
-include_recipe "osx::turn_on_ssh"

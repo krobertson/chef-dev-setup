@@ -1,4 +1,42 @@
 {
-  "packages": [ "autossh", "ssh-copy-id", "ack", "imagemagick", "ctags", "wget", "redis", "ec2-api-tools", "elb-tools" ],
-  "run_list": [ "recipe[homebrew]", "recipe[packages]", "recipe[rvm]", "recipe[memcached]", "recipe[mongodb]", "recipe[mysql]", "recipe[ken]" ]
+  "applications": [
+    "1password",
+    "adium",
+    "aquamacs",
+    "chrome",
+    "dropbox",
+    "fluid",
+    "istat_menus",
+    "kaleidoscope",
+    "macvim",
+    "sequel_pro",
+    "skype",
+    "textmate",
+    "things",
+    "transmission",
+    "transmit"
+  ],
+
+  "packages": [
+    "ack",
+    "autossh",
+    "ctags",
+    "ec2-api-tools",
+    "elb-tools",
+    "imagemagick",
+    "redis",
+    "ssh-copy-id",
+    "wget"
+  ],
+
+  "osx": [
+    "disable_front_row",
+    "dock_preferences",
+    "finder_display_full_path",
+    "safari_preferences",
+    "textmate_set_defaults",
+    "turn_on_ssh"
+  ],
+
+  "recipes":  [ "homebrew", "applications", "packages", "rvm", "memcached", "mongodb", "mysql", "osx", "user_config" ]
 }
