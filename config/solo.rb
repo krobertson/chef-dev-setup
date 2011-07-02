@@ -4,7 +4,7 @@ role_path     File.join(root_dir, 'roles')
 cookbook_path File.join(root_dir, 'cookbooks')
 
 file_store_path   root_dir
-file_cache_path   root_dir
+file_cache_path   Dir.tmpdir
 file_backup_path  File.join(root_dir, '.chef/backup')
 checksum_path     File.join(root_dir, '.chef/checksums')
 sandbox_path      File.join(root_dir, '.chef/sandbox')
