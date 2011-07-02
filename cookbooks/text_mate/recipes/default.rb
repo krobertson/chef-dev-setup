@@ -1,3 +1,20 @@
+##  This is very experimental and unsupported.
+
+run_unless_marker_file_exists("text_mate_1_5_10") do
+  execute "download text mate to temp dir" do
+    command "curl -o /tmp/textmate.zip http://dl.macromates.com/TextMate_1.5.10_r1631.zip"
+  end
+
+  execute "copy text mate to /Applications" do
+    command 'unzip /tmp/textmate.zip -d /Applications/'
+  end
+
+  execute "link textmate" do
+    command "ln -s /Applications/TextMate.app/Contents/Resources/mate /usr/local/bin/mate"
+    not_if "test -e /usr/local/bin/mate"
+  end
+end
+
 directory "/Users/#{node[:current_user]}/Library/Application Support/TextMate/Themes/WebPreview" do
   recursive true
 end

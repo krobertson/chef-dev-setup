@@ -1,4 +1,4 @@
 {
-  "packages": ["autossh", "ack", "imagemagick", "ctags", "wget", "redis"],
-  "run_list": [ "recipe[homebrew]", "recipe[packages]", "recipe[rvm]", "recipe[memcached]", "recipe[mongodb]", "recipe[mysql]", "recipe[text_mate]", "recipe[ken]" ]
+  "packages": [ "autossh", "ssh-copy-id", "ack", "imagemagick", "ctags", "wget", "redis", "ec2-api-tools", "elb-tools" ],
+  "run_list": [ "recipe[homebrew]", "recipe[packages]", "recipe[rvm]", "recipe[memcached]", "recipe[mongodb]", "recipe[mysql]", "recipe[ken]" ]
 }

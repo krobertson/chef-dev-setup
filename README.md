@@ -43,4 +43,4 @@ This should be run using the system ruby.  Why?  It is intended to install RVM, 
 This will take care of installing chef if it isn't already installed and then kicking off chef-solo.  If you feel like running it yourself, just do:
 
     sudo gem install chef -v "~> 0.10.0" --no-ri --no-rdoc
-    chef-solo -l info -c config/solo.rb -j dna.json
+    chef-solo -c config/solo.rb -j dna.json

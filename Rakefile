@@ -8,5 +8,5 @@ end
 
 task :cook => :install do
   puts "Running chef-solo..."
-  sh "chef-solo -l info -c config/solo.rb -j dna.json"
+  sh "chef-solo -c config/solo.rb -j dna.json"
 end

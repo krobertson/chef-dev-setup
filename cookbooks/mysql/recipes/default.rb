@@ -20,11 +20,3 @@ end
 service "com.mysql.mysqld" do
   action [:enable, :start]
 end
-
-#execute 'autostart mysql on boot' do
-#  command %Q{
-#    mkdir -p ~/Library/LaunchAgents
-#    cp /usr/local/Cellar/mysql/5.5.12/com.mysql.mysqld.plist ~/Library/LaunchAgents/
-#    launchctl load -w ~/Library/LaunchAgents/com.mysql.mysqld.plist
-#  }
-#end

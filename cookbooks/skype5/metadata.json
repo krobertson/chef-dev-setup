@@ -1,0 +1,30 @@
+{
+  "name": "skype5",
+  "description": "Installs/Configures skype5",
+  "long_description": "DESCRIPTION\n===========\n\nInstalls Skype 5 and ChatStyle [Brief](http://media.miekd.com/brief/) for Mac OS X.\n\nCHANGES\n=======\n\n- 1.0.4: use dmg_package LWRP\n- 1.0.3: notify ruby block\n- 1.0.2: update url for non-beta version of Skype 5 on OSX. To upgrade, remove Skype.app from /Applications.\n\nREQUIREMENTS\n============\n\n## Platform\n\n* Mac OS X\n\n## Cookbooks\n\n* dmg\n\nATTRIBUTES\n==========\n\n* `node[\"skype5\"][\"chat_style\"]` - URL to a ChatStyle zip file to download. Default is the Brief chat style.\n\nUSAGE\n=====\n\nUse the skype5 default recipe to install Skype 5. Set the `node[\"skype5\"][\"chat_style\"]` to another ChatStyle URL if you don't want the Brief style, or set it to false if you don't want any ChatStyle installed.\n\nLICENSE AND AUTHOR\n==================\n\nCopyright 2010, Joshua Timberman (<cookbooks@housepub.org>)\n\nLicensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n\n    http://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the License.\n",
+  "maintainer": "Joshua Timberman",
+  "maintainer_email": "cookbooks@housepub.org",
+  "license": "Apache 2.0",
+  "platforms": {
+  },
+  "dependencies": {
+    "dmg": ">= 0.0.0"
+  },
+  "recommendations": {
+  },
+  "suggestions": {
+  },
+  "conflicting": {
+  },
+  "providing": {
+  },
+  "replacing": {
+  },
+  "attributes": {
+  },
+  "groupings": {
+  },
+  "recipes": {
+  },
+  "version": "1.0.4"
+}

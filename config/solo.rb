@@ -10,5 +10,6 @@ checksum_path     File.join(root_dir, '.chef/checksums')
 sandbox_path      File.join(root_dir, '.chef/sandbox')
 cache_options({ :path => File.join(root_dir, '.chef/cache/checksums'), :skip_expires => true })
 
-log_level :debug
+log_level          :info
+log_location       STDOUT
 Chef::Log::Formatter.show_time = true

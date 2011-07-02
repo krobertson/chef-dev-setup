@@ -1,5 +1,1 @@
-default[:rvm][:gems] = {
-  :'default@global' => [
-    { :name => "bundler" }
-  ]
-}
+default[:rvm][:gems] = { }
