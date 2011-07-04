@@ -1,5 +1,5 @@
 execute "set user shell" do
-  command "sudo chsh /bin/zsh #{node[:current_user]}"
+  command "sudo chsh -s /bin/zsh #{node[:current_user]}"
 end
 
 git "/Users/#{node[:current_user]}/.configs" do
