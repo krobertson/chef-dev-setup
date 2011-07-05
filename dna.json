@@ -40,5 +40,5 @@
     "turn_on_ssh"
   ],
 
-  "recipes":  [ "homebrew", "applications", "packages", "rvm", "memcached", "mongodb", "mysql", "osx", "user_config" ]
+  "recipes":  [ "homebrew", "applications", "packages", "rvm", "memcached", "mongodb", "mysql", "osx", "user_config", "terminal" ]
 }
