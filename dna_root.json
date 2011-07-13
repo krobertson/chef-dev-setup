@@ -1,0 +1,8 @@
+{
+  "osx": [
+    "noatime",
+    "remove_sleepimage"
+  ],
+
+  "recipes":  [ "osx" ]
+}

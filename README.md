@@ -44,3 +44,4 @@ This will take care of installing chef if it isn't already installed and then ki
 
     sudo gem install chef -v "~> 0.10.0" --no-ri --no-rdoc
     chef-solo -c config/solo.rb -j dna.json
+    sudo chef-solo -c config/solo.rb -j dna_root.json
