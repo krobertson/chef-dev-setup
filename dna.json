@@ -41,7 +41,8 @@
     "finder_display_full_path",
     "safari_preferences",
     "textmate_set_defaults",
-    "turn_on_ssh"
+    "turn_on_ssh",
+    "disable_spotlight"
   ],
 
   "recipes":  [ "homebrew", "applications", "packages", "rvm", "memcached", "mongodb", "mysql", "osx", "user_config", "terminal" ]
