@@ -25,9 +25,13 @@
     "ctags",
     "ec2-api-tools",
     "elb-tools",
+    "geoip",
     "imagemagick",
     "redis",
+    "redis",
+    "sphinx",
     "ssh-copy-id",
+    "tokyo-cabinet",
     "wget"
   ],
 
