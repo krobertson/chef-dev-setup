@@ -45,5 +45,5 @@
     "disable_spotlight"
   ],
 
-  "recipes":  [ "homebrew", "applications", "packages", "rvm", "memcached", "mongodb", "mysql", "osx", "user_config", "terminal" ]
+  "recipes":  [ "homebrew", "applications", "packages", "rvm", "memcached", "mongodb", "mysql", "rabbitmq", "osx", "user_config", "terminal" ]
 }
