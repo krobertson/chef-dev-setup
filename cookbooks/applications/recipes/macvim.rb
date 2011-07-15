@@ -8,3 +8,15 @@ bash "installed macvim from google code" do
   EOS
   creates "/usr/local/bin/mvim"
 end
+
+git "/Users/#{node[:current_user]}/.vim" do
+  repository 'git://github.com/carlhuda/janus.git'
+  reference "master"
+  action :sync
+  notifies :run, "execute[install janus]"
+end
+
+execute "install janus" do
+  cwd "/Users/#{node[:current_user]}/.vim"
+  command "rake"
+end
