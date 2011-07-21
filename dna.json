@@ -42,5 +42,5 @@
     "turn_on_ssh"
   ],
 
-  "recipes":  [ "ssh", "homebrew", "applications", "packages", "rvm", "memcached", "mongodb", "mysql", "rabbitmq", "redis", "osx", "user_config", "terminal" ]
+  "recipes":  [ "ssh", "homebrew", "applications", "packages", "rvm", "memcached", "mongodb", "mysql", "rabbitmq", "redis", "osx", "user_config" ]
 }
