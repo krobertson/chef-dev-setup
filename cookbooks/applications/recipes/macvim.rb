@@ -1,11 +1,12 @@
 bash "installed macvim from google code" do
   code <<-EOS
     rm -rf /Applications/MacVim.app
-    curl -L http://github.com/downloads/b4winckler/macvim/MacVim-snapshot-58.tbz -o - | tar xj -
-    cd MacVim-snapshot-58
+    curl -L https://github.com/downloads/b4winckler/macvim/MacVim-snapshot-59.tbz -o - | tar xj -
+    cd MacVim-snapshot-59
     cp -r MacVim.app /Applications/
     cp mvim /usr/local/bin/
   EOS
+  cwd '/tmp'
   creates "/usr/local/bin/mvim"
 end
 
