@@ -5,10 +5,10 @@ package "redis"
 execute "copy redis launch script" do
   command %Q{
     mkdir -p ~/Library/LaunchAgents
-    cp `find /usr/local/Cellar/redis -name io.redis.redis-server.plist | tail -n 1` ~/Library/LaunchAgents/
+    cp `find /usr/local/Cellar/redis -name homebrew.mxcl.redis.plist | tail -n 1` ~/Library/LaunchAgents/
   }
 end
 
-service "io.redis.redis-server" do
+service "homebrew.mxcl.redis" do
   action [:enable, :start]
 end

@@ -13,10 +13,10 @@ end
 execute "copy mysql launch script" do
   command %Q{
     mkdir -p ~/Library/LaunchAgents
-    cp `find /usr/local/Cellar/mysql -name com.mysql.mysqld.plist | tail -n 1` ~/Library/LaunchAgents/
+    cp `find /usr/local/Cellar/mysql -name homebrew.mxcl.mysql.plist | tail -n 1` ~/Library/LaunchAgents/
   }
 end
 
-service "com.mysql.mysqld" do
+service "homebrew.mxcl.mysql" do
   action [:enable, :start]
 end

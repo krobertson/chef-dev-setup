@@ -5,10 +5,10 @@ package "mongodb"
 execute "copy mongodb launch script" do
   command %Q{
     mkdir -p ~/Library/LaunchAgents
-    cp `find /usr/local/Cellar/mongodb -name org.mongodb.mongod.plist | tail -n 1` ~/Library/LaunchAgents/
+    cp `find /usr/local/Cellar/mongodb -name homebrew.mxcl.mongodb.plist | tail -n 1` ~/Library/LaunchAgents/
   }
 end
 
-service "org.mongodb.mongod" do
+service "homebrew.mxcl.mongodb" do
   action [:enable, :start]
 end

@@ -1,8 +1,9 @@
 ##  This is very experimental and unsupported.
 
 run_unless_marker_file_exists("text_mate_1_5_10") do
-  execute "download text mate to temp dir" do
-    command "curl -o /tmp/textmate.zip http://dl.macromates.com/TextMate_1.5.10_r1631.zip"
+  remote_file "/tmp/textmate.zip" do
+    source "http://download.macromates.com/TextMate_1.5.10.zip"
+    checksum "04def68baece6460902b8a2e5cfa4a85676d0b82b93cb44423db843a4c314bcd"
   end
 
   execute "copy text mate to /Applications" do
@@ -48,7 +49,7 @@ git "/Users/#{node[:current_user]}/Library/Application Support/TextMate/Bundles/
 end
 
 git "/Users/#{node[:current_user]}/Library/Application Support/TextMate/Bundles/Ruby-Haml.tmbundle" do
-  repository "https://github.com/mattpolito/ruby-haml.tmbundle.git"
+  repository "https://github.com/textmate/ruby-haml.tmbundle.git"
   reference "master"
   action :sync
 end
