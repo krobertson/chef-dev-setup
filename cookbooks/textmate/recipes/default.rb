@@ -59,3 +59,7 @@ end
 remote_file "/Users/#{node[:current_user]}/Library/Application Support/TextMate/Themes/Railscasts.tmTheme" do
   source "https://github.com/ryanb/textmate-themes/raw/master/railscasts.tmTheme"
 end
+
+execute "select Railscast theme" do
+  command "defaults write com.macromates.textmate OakThemeManagerSelectedTheme -string FC05BACA-10E3-4636-82C5-758C2334DA9D"
+end
