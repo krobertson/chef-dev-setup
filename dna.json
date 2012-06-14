@@ -9,7 +9,6 @@
     "fluid",
     "istat_menus",
     "kaleidoscope",
-    "macvim",
     "sequel_pro",
     "skype",
     "textmate",
@@ -25,11 +24,8 @@
     "ctags",
     "ec2-api-tools",
     "elb-tools",
-    "geoip",
     "imagemagick",
-    "sphinx",
     "ssh-copy-id",
-    "tokyo-cabinet",
     "wget"
   ],
 
@@ -43,5 +39,5 @@
     "multitouch"
   ],
 
-  "recipes":  [ "ssh", "homebrew", "applications", "packages", "rvm", "memcached", "mongodb", "mysql", "rabbitmq", "redis", "osx", "user_config" ]
+  "recipes":  [ "ssh", "homebrew", "applications", "packages", "rvm", "memcached", "mongodb", "mysql", "redis", "osx", "user_config" ]
 }
