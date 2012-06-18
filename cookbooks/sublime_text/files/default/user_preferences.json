@@ -1,0 +1,15 @@
+{
+  "color_scheme": "Packages/Color Scheme - Default/Railscasts.tmTheme",
+  "drawWhiteSpace": true,
+  "ensure_newline_at_eof_on_save": true,
+  "font_size": 12.0,
+  "highlight_line": true,
+  "highlight_modified_tabs": true,
+  "hot_exit": false,
+  "remember_open_files": false,
+  "rulers": [ 80 ],
+  "tab_completion": false,
+  "tab_size": 2,
+  "translate_tabs_to_spaces": true,
+  "use_tab_stops": true
+}

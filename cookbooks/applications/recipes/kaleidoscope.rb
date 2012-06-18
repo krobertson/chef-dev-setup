@@ -1,3 +1,3 @@
 zipapp_package "Kaleidoscope" do
-  source "http://d38sv94p198wrl.cloudfront.net/KSUpdates/1.1.4_50/Kaleidoscope_1.1.6_55.zip"
+  source "http://bpxl-kaleidoscope.s3.amazonaws.com/Kaleidoscope-1.1.6.zip"
 end
